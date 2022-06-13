@@ -19,7 +19,7 @@
                             <h5 class="card-title">To do List</h5>
                             <div class="card-text">
                                 <ul class="list-group my-4">
-                                    <li class="list-group-item" v-for="(toDo, i) in toDoList">
+                                    <li v-for="(toDo, i) in toDoList" class="list-group-item" :class="{'text-decoration-line-through': toDo.done}">
                                         <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." v-model="toDo.done">
                                         {{ toDo.text }}
                                     </li>
