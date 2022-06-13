@@ -33,12 +33,24 @@ new Vue ({
                 text: 'Bere il caffè',
                 done: true
             }
-        ]
+        ],
+
+        currentText : null
     },
 
     methods: {
         deleteToDo(index){
             this.toDoList.splice(index, 1)
+        },
+
+        addToDo(){
+            this.toDoList.push({
+                text: this.currentText,
+                done: false
+            });
+            this.currentText = null;
         }
     }
+
+    
 })
