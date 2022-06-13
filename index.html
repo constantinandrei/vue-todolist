@@ -10,7 +10,27 @@
     <title>To Do List</title>
 </head>
 <body>
-    <div class="container"></div>
+    <div class="container vh-100">
+        <div class="row h-100 justify-content-center">
+            <div class="col col-md-3 d-flex align-items-center justify-content-center">
+                <div id="app">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">To do List</h5>
+                            <div class="card-text">
+                                <ul class="list-group my-4">
+                                    <li class="list-group-item" v-for="(toDo, i) in toDoList">
+                                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." v-model="toDo.done">
+                                        {{ toDo.text }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>

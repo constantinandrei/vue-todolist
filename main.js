@@ -18,3 +18,21 @@ Bonus:
 
 
 */
+
+new Vue ({
+    el: '#app',
+
+    data: {
+        toDoList: [
+            {
+                text: 'Lavare i piatti',
+                done: false
+            },
+
+            {
+                text: 'Bere il caffè',
+                done: true
+            }
+        ]
+    }
+})
