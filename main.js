@@ -32,7 +32,22 @@ new Vue ({
             {
                 text: 'Bere il caffè',
                 done: true
-            }
+            },
+
+            {
+                text: 'Fare la spesa',
+                done: true
+            },
+
+            {
+                text: 'Lavare la macchina',
+                done: false
+            },
+
+            {
+                text: 'Comprare i fiori',
+                done: true
+            },
         ],
 
         currentText : null

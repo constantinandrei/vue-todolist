@@ -19,10 +19,10 @@
                             <h5 class="card-title">To do List</h5>
                             <div class="card-text">
                                 <ul class="list-group my-4">
-                                    <li v-for="(toDo, i) in toDoList" class="list-group-item d-flex justify-content-between align-items-center" >
+                                    <li v-for="(toDo, i) in toDoList" class="list-group-item d-flex justify-content-between" :class="{'list-group-item-success': toDo.done}">
                                         <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." v-model="toDo.done" >
-                                        <span class="flex-grow-1" :class="{'text-decoration-line-through': toDo.done}">{{ toDo.text }}</span>
-                                        <span class="badge bg-danger rounded-pill" @click="deleteToDo(i)">x</span>
+                                        <div class="flex-grow-1 ps-2" :class="{'text-decoration-line-through': toDo.done}">{{ toDo.text }}</div>
+                                        <div class="badge bg-danger rounded-pill" @click="deleteToDo(i)">x</div>
                                     </li>
                                 </ul>
                                 <div class="input-group mb-3">
