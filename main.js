@@ -34,5 +34,11 @@ new Vue ({
                 done: true
             }
         ]
+    },
+
+    methods: {
+        deleteToDo(index){
+            this.toDoList.splice(index, 1)
+        }
     }
 })

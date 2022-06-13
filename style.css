@@ -1,0 +1,7 @@
+.badge {
+    cursor: pointer;
+}
+
+.list-group-item:not(:hover) .badge {
+    opacity: 0;
+}
